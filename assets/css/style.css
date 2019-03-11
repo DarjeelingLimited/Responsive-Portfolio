@@ -159,9 +159,7 @@ img{
 
 /* 980px sized stuff*/
 @media only screen and (max-width: 980px){
-    h1{
-        background-color: red; 
-    }
+    
  
     #ProfilePic{
         width: 20vw;
@@ -188,14 +186,16 @@ img{
     #topname{
         margin-left: 2em; 
     }
+    .portfoliopage{
+        margin-left: 5em;
+    }
+  
 }
 
 
 /*768px sized stuff*/
 @media only screen and (max-width: 768px){
-    h1{
-        background-color: yellow; 
-    }
+
     #ProfilePic{
         width: 30vw;
         height: 40vw; 
@@ -220,21 +220,14 @@ img{
 
 }
 
-
-
 /* 640px sized stuff*/
 
 @media only screen and (max-width: 640px){
-    h1{
-        background-color: blue; 
-    }
-    #pagetitle{
-        background-color: blue;
-    }
     #topname{
         margin-left: 2em; 
     }
     /* On screens that are 640px wide or less, make the menu links stack on top of each other instead of next to each other */
+
     .topnav a{
         float: none;
         width: 80vw;
@@ -262,14 +255,36 @@ img{
     .copyright{
         margin-left: -8vw; 
     }
-    .container{
+     .container{
         display: flex; 
         flex-direction: row;
         flex-flow: row wrap;
   
         justify-content: space-around; 
+    } 
+
+    .topnav{
+        width: 100%;
+        text-align: center;
+        border-bottom: solid 2px; 
+        border-color: 777777;
+        margin: 0 auto;
+        padding: 1em; 
     }
 
+    .topname{
+        width: 50em;
+        text-align: center; 
+        background-color: #4aaaa5;
+        padding-left: 10em; 
+        margin-left: 50px; 
+    }
+   
+   .onlysmall{
+    margin-left: 5vw;
+    height: 14vw; 
+    text-align: center;
+   }
    
 
 } /* end of 640px stuff*/
